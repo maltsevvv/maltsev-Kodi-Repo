@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="skin.rnsd" version="2.1.0" name="RNS-D" provider-name="Maltsev">
+<addon id="skin.rnsd" version="18.0.3" name="RNS-D" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
