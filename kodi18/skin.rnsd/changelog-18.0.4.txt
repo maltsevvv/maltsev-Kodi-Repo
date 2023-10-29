@@ -1,0 +1,27 @@
+[B]18.0.4[/B]
+Add autoconnect bluetooth
+
+[B]18.0.3[/B]
+Bluetooth controlling devices (prev,next,stop)
+	MFSW_UP     - bluetoothctl next
+	MFSW_DOWN   - bluetoothctl prev
+	MFSW_RIGHT  - bluetoothctl disconnect
+
+	RNS*_LEFT   - bluetoothctl prev
+	RNS*_RIGHT  - bluetoothctl next
+	RNS*_RETURN - bluetoothctl disconnect
+Bluetooth Info Music in Home Menu
+	Artist, Title, Device connecting
+
+[B]18.0.2[/B]
+Bluetooth controlling devices (prev,next)
+
+[B]2.0.1[/B]
+Добавлены варианты Выключения RPI (перезагрузка или Выключение)
+Добавлена выбор выключение или не выключение RPI, если RNS отключилась
+SD overlay работает без правки raspi-config
+msg
+
+[B]2.0.0[/B]
+if 34f#0001 - tv-tuner off
+reboot system 
