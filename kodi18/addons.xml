@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="skin.rnsd" version="18.0.3" name="RNS-D" provider-name="Maltsev">
+<addon id="skin.rnsd" version="18.0.4" name="RNS-D" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
@@ -17,11 +17,20 @@
 		<description lang="ru">Обложка RNS-D написана специально в стиле AUDI Navigation plus, для комфортного пользования на автомобильом экране. Так же реализовано управление штатными кнопками на автомагнитоле</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	    <website>https://sites.google.com/view/rnspi/</website>
+		<website>https://sites.google.com/view/rnsdpi/</website>
 		<assets>
-			<icon>resources/icon.png</icon>
-			<screenshot>resources/list.png</screenshot>
-			<screenshot>resources/music.png</screenshot>
+                       <icon>resources/icon.png</icon>
+                       <fanart>resources/fanart.jpg</fanart>
+                       <screenshot>resources/screenshot-01.jpg</screenshot>
+                       <screenshot>resources/screenshot-02.jpg</screenshot>
+                       <screenshot>resources/screenshot-03.jpg</screenshot>
+                       <screenshot>resources/screenshot-04.jpg</screenshot>
+                       <screenshot>resources/screenshot-05.jpg</screenshot>
+                       <screenshot>resources/screenshot-06.jpg</screenshot>
+                       <screenshot>resources/screenshot-07.jpg</screenshot>
+                       <screenshot>resources/screenshot-08.jpg</screenshot>
+                       <screenshot>resources/screenshot-09.jpg</screenshot>
+                       <screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
