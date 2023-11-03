@@ -7,7 +7,7 @@
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1024" height="768" default="true" folder="xml" />
 	</extension>
-	<extension point="xbmc.service" library="addon1.py" start="login">
+	<extension point="xbmc.service" library="addon.py" start="login">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
