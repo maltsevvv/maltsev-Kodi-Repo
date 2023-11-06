@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.rnse" version="2.1.0" name="RNS-E" provider-name="Maltsev">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1024" height="768" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">AUDI Navigation plus (RNS-E)</summary>
+		<summary lang="ru">AUDI Navigation plus (RNS-E)</summary>
+		<description lang="en">RNS-E cover specially written in the style of AUDI Navigation plus, for comfortable use on the car screen. The control of standard buttons on the car radio is also implemented</description>
+		<description lang="ru">Обложка RNS-E написана специально в стиле AUDI Navigation plus, для комфортного пользования на автомобильом экране. Так же реализовано управление штатными кнопками на автомагнитоле</description>
+		<platform>all</platform>
+		<forum>https://sites.google.com/view/rnsdpi/</forum>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<screenshot>resources/list.png</screenshot>
+			<screenshot>resources/music.png</screenshot>
+		</assets>
+	</extension>
+</addon>
