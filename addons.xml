@@ -16,7 +16,7 @@
 	<platform>all</platform>
     </extension>
 </addon>
-<!-- <addon id="repository.Maltsev_kodi19" name="Maltsev Repo Kodi19" version="1.0.0" provider-name="Maltsevvv">
+<addon id="repository.Maltsev_kodi19" name="Maltsev Repo Kodi19" version="1.0.0" provider-name="Maltsevvv">
     <requires>
 	<import addon="xbmc.gui" version="5.15.0"/>
     </requires>
@@ -31,5 +31,5 @@
 	<description>Maltsev Repository</description>
 	<platform>all</platform>
     </extension>
-</addon> -->
+</addon>
 </addons>
