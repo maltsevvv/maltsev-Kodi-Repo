@@ -1,5 +1,14 @@
+[B]18.1.5[/B]
+Add send to FIS Dislay
+
+[B]18.1.4[/B]
+Edit control vertualkeyboard
+
+[B]18.1.1[/B]
+Edit color skin
+
 [B]18.1.0[/B]
-Change emulation tv-tuner. RUN in load skin
+Disable systemctl tvtuner
 
 [B]18.0.4[/B]
 Add autoconnect bluetooth
