@@ -36,7 +36,8 @@ directory mask = 0775
 writeable = yes
 browseable = yes
 public = yes
-force user = root
+#force user = root
+force user = pi
 guest ok = yes
 EOF
 fi
