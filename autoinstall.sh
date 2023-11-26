@@ -294,7 +294,7 @@ fi
 rm -r /home/pi/.kodi/addons/skin.rns*
 unzip /tmp/skin.rnsd*.zip -d /home/pi/.kodi/addons/ > /dev/null 2>&1
 unzip /tmp/repository.maltsev_kod*.zip -d /home/pi/.kodi/addons/ > /dev/null 2>&1
-chown -R pi:pi /home/pi/.kodi/addons/
+# chown -R pi:pi /home/pi/.kodi/addons/
 sed -i -e '$i \  <addon optional="true">skin.rnsd</addon>' /usr/share/kodi/system/addon-manifest.xml
 sed -i -e 's/lookandfeel.skin" default="true">skin.estuary/lookandfeel.skin">skin.rnsd/' /home/pi/.kodi/userdata/guisettings.xml
 
@@ -362,7 +362,7 @@ cat <<'EOF' > /home/pi/.kodi/userdata/sources.xml
     </games>
 </sources>
 EOF
-chown pi:pi /home/pi/.kodi/userdata/sources.xml
+#chown pi:pi /home/pi/.kodi/userdata/sources.xml
 
 # Disable Screensaver
 sed -i 's/id="screensaver.mode" default="true">screensaver.xbmc.builtin.dim/id="screensaver.mode">/' /home/pi/.kodi/userdata/guisettings.xml
@@ -377,6 +377,8 @@ sed -i 's/volumeamplification>0.000000/volumeamplification>30.000000/' /home/pi/
 sed -i 's/id="services.webserverauthentication" default="true">true/id="services.webserverauthentication">false/' /home/pi/.kodi/userdata/guisettings.xml
 sed -i 's/id="services.webserver" default="true">false/id="services.webserver">true/' /home/pi/.kodi/userdata/guisettings.xml
 
+#chown
+chown -R pi:pi /home/pi/
 ##############################################
 #            EDIT /boot/config.txt           #
 ##############################################
