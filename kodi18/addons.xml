@@ -24,6 +24,7 @@
 	</extension>
 </addon>
 
+
 <addon id="skin.rnse" version="2.1.0" name="RNS-E" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
