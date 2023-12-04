@@ -389,9 +389,6 @@ if (whiptail --title "Video Output" --yesno "Use HDMI-VGA Adapter For Video Outp
   echo "---------------------------------------------------------"
   cat <<'EOF' > /boot/config.txt
 
-## CEC Remote Control
-hdmi_ignore_cec=1
-
 ## HDMI to VGA adapter for RNS
 disable_overscan=1
 hdmi_force_hotplug=1
