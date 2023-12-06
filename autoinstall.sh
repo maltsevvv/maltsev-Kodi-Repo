@@ -477,7 +477,7 @@ name = "nec_rnsjp3"
 protocol = "nec"
 [protocols.scancodes]
 
-0x98 = "KEY_PLAY"
+0x98 = "KEY_STOP"
 0x89 = "KEY_ENTER"
 0x8a = "KEY_BACK"
 0x94 = "KEY_UP"
