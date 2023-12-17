@@ -32,7 +32,7 @@ fi
 
 rm /opt/splash.png
 #wget -P /opt https://github.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.png
-wget -P /opt https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/blob/master/splash/splash.png
+wget -P /opt https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.png
 
 if (systemctl -q is-active kodi.service); then
   systemctl stop kodi.service
