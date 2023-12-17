@@ -7,7 +7,6 @@ disable_splash=1
 EOF
 fi
 
-
 sed -i 's/console=tty1/console=tty3 consoleblank=0 loglevel=1 /' /boot/cmdline.txt
 
 systemctl disable getty@tty1
@@ -31,6 +30,7 @@ EOF
   systemctl enable splashscreen
 fi
 
+rm /opt/splash.png
 wget -P /opt https://github.com/maltsevvv/maltsev-Kodi-Repo/blob/master/splash/splash.png
 
 if (systemctl -q is-active kodi.service); then
@@ -44,5 +44,5 @@ fi
 
 mv /usr/share/kodi/media/splash.jpg /usr/share/kodi/media/original_splash.jpg
 wget -P /usr/share/kodi/media/ https://github.com/maltsevvv/maltsev-Kodi-Repo/blob/master/splash/splash.jpg
-
+sleep 10
 reboot
