@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if ! grep -q "disable_splash=1" /boot/config.txt; then
-  cat <<'EOF' >> /home/pi/config.txt
+  cat <<'EOF' >> /boot/config.txt
 
 disable_splash=1
 EOF
 fi
 
 
-sed -i 's/console=tty1/console=tty3 consoleblank=0 loglevel=1 /' /boot/config.txt
+sed -i 's/console=tty1/console=tty3 consoleblank=0 loglevel=1 /' /boot/cmdline.txt
 
 systemctl disable getty@tty1
 
