@@ -7,31 +7,20 @@ disable_splash=1
 EOF
 fi
 
-sed -i 's/console=tty1/console=tty3 consoleblank=0 loglevel=1 /' /boot/cmdline.txt
+sed -i 's/console=tty1/console=tty3 loglevel=3 /' /boot/cmdline.txt
 
-systemctl disable getty@tty1
+apt install -y plymouth plymouth-themes
+apt install -y pix-plym-splash
+plymouth-set-default-theme pix
 
-rm /opt/splash.png
-wget -P /opt https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.png
-
-
-apt install -y fbi
-if ! grep -q "Description=Splash screen" /etc/systemd/system/splashscreen.service; then
-  cat <<'EOF' > /etc/systemd/system/splashscreen.service
-[Unit]
-Description=Splash screen
-DefaultDependencies=no
-After=local-fs.target
-
-[Service]
-ExecStart=/usr/bin/fbi -d /dev/fb0 --noverbose -a /opt/splash.png
-StandardInput=tty
-StandardOutput=tty
-
-[Install]
-WantedBy=sysinit.target
-EOF
-  systemctl enable splashscreen
+if [ -e /home/pi/splash.png ]; then
+  echo "FIND YOU splash.png"
+  rm /usr/share/plymouth/themes/pix/splash.png
+  cp /home/pi/splash.png /usr/share/plymouth/themes/pix/
+else
+  echo "Download splash.png"
+  rm /usr/share/plymouth/themes/pix/splash.png
+  wget -P /usr/share/plymouth/themes/pix/ https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.png
 fi
 
 if (systemctl -q is-active kodi.service); then
@@ -43,6 +32,18 @@ elif (systemctl -q is-active kodi.service); then
 exit 1
 fi
 
-mv /usr/share/kodi/media/splash.jpg /usr/share/kodi/media/original_splash.jpg
-wget -P /usr/share/kodi/media/ https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.jpg
+if [ ! -e /usr/share/kodi/media/original_splash.jpg ]; then
+  mv /usr/share/kodi/media/splash.jpg /usr/share/kodi/media/original_splash.jpg
+fi
+
+if [ -e /home/pi/splash.jpg ]; then
+  echo "FIND YOU splash.jpg"
+  rm /usr/share/kodi/media/splash.jpg
+  cp /home/pi/splash.jpg /usr/share/kodi/media/
+else
+  echo "Download splash.jpg"
+  rm /usr/share/kodi/media/splash.jpg
+  wget -P /usr/share/kodi/media/ https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.jpg
+fi
+
 reboot
