@@ -8,7 +8,7 @@
 # EOF
 # fi
 
-sed -i 's/console=tty1/console=tty3 loglevel=3 /' /boot/cmdline.txt
+sed -i 's/console=tty1/console=tty3/' /boot/cmdline.txt
 
 apt install -y plymouth plymouth-themes
 apt install -y pix-plym-splash
