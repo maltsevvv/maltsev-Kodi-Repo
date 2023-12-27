@@ -366,6 +366,7 @@ EOF
 
 # Disable Screensaver
 sed -i 's/id="screensaver.mode" default="true">screensaver.xbmc.builtin.dim/id="screensaver.mode">/' /home/pi/.kodi/userdata/guisettings.xml
+sed -i 's/id="screensaver.mode" default="true">default/id="screensaver.mode">/' /home/pi/.kodi/userdata/guisettings.xml
 
 # Enable auto play next video
 sed -i 's/id="videoplayer.autoplaynextitem" default="true">/id="videoplayer.autoplaynextitem">0,1,2,3,4/' /home/pi/.kodi/userdata/guisettings.xml
