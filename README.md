@@ -31,11 +31,14 @@ sudo rmmod btusb
 sudo modprobe btusb
 sudo rpi-update
 
-reboot
+sudo reboot
 
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt autoremove -y
+
+sudo reboot
+
 sudo rpi-update
 ```
 ```
