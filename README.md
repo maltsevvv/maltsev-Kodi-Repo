@@ -10,7 +10,7 @@ wget -P /tmp https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/maste
 sudo sh /tmp/splash.sh
 ```
 
-### Bluetooth for Buster
+## USB Bluetoothe модуль V5 for Buster
 ```
 hciconfig
 ```
