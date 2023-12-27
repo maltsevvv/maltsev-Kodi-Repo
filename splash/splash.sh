@@ -51,7 +51,7 @@ fi
 #                SETTINGS KODI               #
 ##############################################
 echo "---------------------------------------------------------"
-echo "PRESETTING KODI"
+echo "DISABLE SPLASH KODI"
 echo "---------------------------------------------------------"
 cat <<'EOF' > /home/pi/.kodi/userdata/advancedsettings.xml
 	
