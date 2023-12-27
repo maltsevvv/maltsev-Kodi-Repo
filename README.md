@@ -30,11 +30,9 @@ uname -a
 sudo rmmod btusb
 sudo modprobe btusb
 sudo rpi-update
-```
-```
+
 reboot
-```
-```
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt autoremove -y
@@ -43,4 +41,6 @@ sudo rpi-update
 ```
 sudo nano /boot/config.txt
 ```
-`dtoverlay=disable-bt`
+```
+dtoverlay=disable-bt
+```
