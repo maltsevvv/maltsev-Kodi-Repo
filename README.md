@@ -27,17 +27,16 @@ uname -a
 `Linux rns 4.19.97-v7+`
 
 ```
-sudo rmmod btusb
-sudo modprobe btusb
-sudo rpi-update
-
-sudo reboot
-
+#sudo rmmod btusb
+#sudo modprobe btusb
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt autoremove -y
 
+sudo rpi-update
+
 sudo reboot
+
 
 sudo rpi-update
 ```
@@ -47,3 +46,11 @@ sudo nano /boot/config.txt
 ```
 dtoverlay=disable-bt
 ```
+
+sudo reboot
+
+sudo bluetoothctl
+
+pair mac
+
+sudo bluetoothctl
