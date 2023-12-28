@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.rns-test" version="18.0.1." name="RNS-test" provider-name="Maltsev">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1024" height="768" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">AUDI Navigation plus (RNS)</summary>
+		<summary lang="ru">AUDI Navigation plus (RNS)</summary>
+		<description lang="en">RNS-D cover specially written in the style of AUDI Navigation plus, for comfortable use on the car screen. The control of standard buttons on the car radio is also implemented</description>
+		<description lang="ru">Обложка RNS-D написана специально в стиле AUDI Navigation plus, для комфортного пользования на автомобильом экране. Так же реализовано управление штатными кнопками на автомагнитоле</description>
+		<platform>all</platform>
+		<website>https://sites.google.com/view/rnsdpi/</website>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+		</assets>
+	</extension>
+</addon>
