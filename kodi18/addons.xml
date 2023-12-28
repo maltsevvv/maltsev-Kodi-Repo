@@ -160,7 +160,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="skin.rns-test" version="2.1.0" name="RNS-test" provider-name="Maltsev">
+<addon id="skin.rns-test" version="18.0.1" name="RNS-test" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
