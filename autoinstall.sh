@@ -11,9 +11,14 @@ else
   exit 0
 fi
 
+echo "---------------------------------------------------------"
+echo "Update & Upgrade"
+echo "---------------------------------------------------------"
 apt update -y
 
-#apt upgrade -y
+apt upgrade -y
+
+apt autoremove -y
 
 echo "---------------------------------------------------------"
 echo "Installing samba"
