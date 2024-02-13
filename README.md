@@ -4,7 +4,7 @@ wget -P /tmp https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/maste
 sudo sh /tmp/autoinstall.sh
 ```
 
-### change image on load system
+### change image on load system. ONLY BUSTER
 ```
 wget -P /tmp https://raw.githubusercontent.com/maltsevvv/maltsev-Kodi-Repo/master/splash/splash.sh
 sudo sh /tmp/splash.sh
