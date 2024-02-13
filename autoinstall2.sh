@@ -56,7 +56,7 @@ if [ ! $? = 0 ]; then
   exit 0
 fi
 sed -i '/service.xbmc.versioncheck/d' /usr/share/kodi/system/addon-manifest.xml #Disable versioncheck
-apt install kodi-pvr-iptvsimple
+apt install -y kodi-pvr-iptvsimple
 if ! grep -q "/usr/bin/kodi-standalone" /etc/systemd/system/kodi.service; then
   cat <<'EOF' > /etc/systemd/system/kodi.service
 [Unit]
@@ -288,11 +288,11 @@ fi
 #               INSTALL SKIN                 #
 ##############################################
 if grep -q 'VERSION="10 (buster)"' /etc/os-release; then
-  wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/kodi18/skin.rnsd/skin.rnsd-18.2.5.zip
+  wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/kodi18/skin.rnsd/skin.rnsd-18.2.6.zip
   wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/repository.maltsev_kodi18/repository.maltsev_kodi18-1.0.0.zip
   sed -i -e '$i \  <addon optional="true">repository.maltsev_kodi18</addon>' /usr/share/kodi/system/addon-manifest.xml
 elif grep -q 'VERSION="11 (bullseye)"' /etc/os-release; then
-  wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/kodi19/skin.rnsd/skin.rnsd-19.2.5.zip
+  wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/kodi19/skin.rnsd/skin.rnsd-19.2.6.zip
   wget -P /tmp https://github.com/maltsevvv/maltsev-Kodi-Repo/raw/master/repository.maltsev_kodi19/repository.maltsev_kodi19-1.0.0.zip
   sed -i -e '$i \  <addon>repository.maltsev_kodi19</addon>' /usr/share/kodi/system/addon-manifest.xml
 fi
