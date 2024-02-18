@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="skin.rnsd" version="19.2.7" name="RNS-D" provider-name="Maltsev">
+<addon id="skin.rnsd" version="18.2.7" name="RNS-D" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
@@ -23,7 +23,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="skin.rnsd" version="19.2.8" name="RNS-D" provider-name="Maltsev">
+<addon id="skin.rnsd" version="18.2.8" name="RNS-D" provider-name="Maltsev">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
